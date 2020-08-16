@@ -1,4 +1,8 @@
 import os
+
+# This is disgusting, but necessary
+os.system('python3 -m pip install torch')
+
 import os.path as osp
 import glob
 from setuptools import setup, find_packages
@@ -58,7 +62,7 @@ def get_extensions():
 
 
 install_requires = []
-setup_requires = ['torch', 'pytest-runner']
+setup_requires = ['pytest-runner']
 tests_require = ['pytest', 'pytest-cov']
 
 setup(
