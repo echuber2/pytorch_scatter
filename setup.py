@@ -57,8 +57,8 @@ def get_extensions():
     return extensions
 
 
-install_requires = ['torch']
-setup_requires = ['pytest-runner']
+install_requires = []
+setup_requires = ['torch', 'pytest-runner']
 tests_require = ['pytest', 'pytest-cov']
 
 setup(
